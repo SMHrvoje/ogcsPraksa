@@ -12,12 +12,34 @@ In the following text you will read project requirements, coding and collaborati
 
 ![Component Diagram](/docs/component-diagram.drawio.png)
 
-## User story
+## User stories
+
+### Primary
 
 As a project manager, I want to develop a project management application that
 allows us to input, manage, track multiple projects, assign users to those projects, and create features
 with deadlines for each project. Users can be assigned to more than one project, and each
 project can have several features tied to specific dates.
+
+### Additional Tasks
+
+1. As a Developer, I want to Dockerize the Spring Boot application, so it can run consistently across different environments.
+
+2. As a Project Manager, I want to mark the actual delivery date of a feature and retrieve a list of features delivered within a specified time period (e.g. 07-2023 - 12-2023), so I can track project progress for specific projects or all projects.
+
+3. As a Chief Financial Officer, I want to see which projects exceeded their equipment budget (project budget - sum of all equipment costs), so I can better manage future budgets. This information should be retrievable using query parameters in a RESTful API.
+
+4. As a User, I want to claim a feature to indicate that I am responsible for its implementation, and I understand that only one user can claim a feature, but I can claim multiple features.
+
+5. As a User, I want to see a list of unclaimed features and filter them by project, so I can identify tasks that need attention on specific projects.
+
+6. As a User, I want to assign an optional person-day estimate to features without affecting their deadlines, so I can plan resources for both current and future features.
+
+7. As a Project Manager, I want to receive a nicely formatted daily notification (at 8 AM) **in the application logs** listing project and feature deadlines within the next 7 days, so I can stay informed about imminent tasks.
+
+8. As a Project Manager, I want to see the number of features assigned to each user in a specified project, so I can balance workloads effectively.
+
+9. As a User, I want to see a breakdown of features in a project by their status (e.g., Not Started, In Progress, Completed), so I can track overall progress.
 
 ## Requirements
 
